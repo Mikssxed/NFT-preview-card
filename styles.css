@@ -113,12 +113,15 @@ p {
     #border {
         box-sizing: border-box;
         width: calc(90vw + 30px);
-        height: calc(80vh + 40px);
+        height: fit-content;
+        margin-top: 100px;
     }
     #card {
+        margin-top: 100px;
         box-sizing: border-box;
         width: 90vw;
-        height: 80vh;
+        height: auto;
+        margin-bottom: 100px;
     }
     #equilibrium {
         width: 100%;
