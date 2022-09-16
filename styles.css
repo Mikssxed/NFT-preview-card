@@ -28,6 +28,33 @@ body {
     margin: 0px auto;
     padding: 20px;
 }
+.image {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
+  .image:hover .overlay {
+    opacity: 0.6;
+    cursor: pointer;
+}
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
 #equilibrium {
     object-fit: cover;
     width: 100%;
@@ -37,6 +64,10 @@ body {
 h1 {
     font-size: 24px;
     color: white;
+}
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 p {
     font-size: 18px;
@@ -73,6 +104,10 @@ p {
 #name {
     color: white;
     margin-left: 4px
+}
+#name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 @media (max-width: 1000px) {
     #border {
